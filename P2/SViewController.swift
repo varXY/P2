@@ -19,7 +19,17 @@ class SViewController: UIViewController {
 		super.viewDidLoad()
 
 		self.title = "Sentences"
+        
+        
 	}
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        let termString = TermString()
+        let batches = termString.getBatch(type: .Same, amount: 2)
+        print(batches)
+    }
 
 	func getLabels(letters: [String]) {
 
