@@ -10,25 +10,47 @@ import Foundation
 import UIKit
 
 class SViewController: UIViewController {
+    
+    var buttons = [UIButton]()
+    
+    let customView = CustomView()
 
-	override func preferredStatusBarStyle() -> UIStatusBarStyle {
-		return .LightContent
-	}
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
-		self.title = "Sentences"
+		self.navigationItem.title = "Sentences"
+        self.view.backgroundColor = UIColor.backgroundColor()
         
+        let buttonSize = CGSize(width: view.frame.height * 0.2, height: view.frame.height * 0.2)
+        let titles = ["Same", "Different"]
         
+        for i in 0..<2 {
+            let x = (self.view.frame.width / 4 - buttonSize.width / 2) + ((self.view.frame.width / 2) * CGFloat(i))
+            let y = (self.view.frame.height - 64 - 49 - buttonSize.height) / 2 - 30 + (60 * CGFloat(i))
+            
+            let rect = CGRectMake(x, y, buttonSize.width, buttonSize.height)
+            
+            let button = customView.mainScreenButton(titles[i], color: UIColor.greenColor(), frame: rect)
+            buttons.append(button!)
+            view.addSubview(button!)
+        }
 	}
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
         let termString = TermString()
-        let batches = termString.getBatch(type: .Same, amount: 2)
+        let batches = termString.getCollection(type: .Same, amount: 2)
         print(batches)
+        
+        for button in buttons {
+            button.hidden = false
+        }
+        
+        for i in 0..<buttons.count {
+            self.buttons[i].genAnimation(.Appear, delay: 0.1 * Double(i), distance: 30 + CGFloat(i) * 40.0)
+        }
     }
 
 	func getLabels(letters: [String]) {

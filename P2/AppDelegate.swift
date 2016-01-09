@@ -16,7 +16,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-		// Override point for customization after application launch.
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        self.window!.backgroundColor = UIColor.whiteColor()
+        
+        let cViewController = CViewController()
+        let navi_0 = NavigationController(rootViewController: cViewController)
+        navi_0.tabBarItem = UITabBarItem(title: "C", image: nil, selectedImage: nil)
+        
+        
+        let wViewController = WViewController()
+        let navi_1 = NavigationController(rootViewController: wViewController)
+        navi_1.tabBarItem = UITabBarItem(title: "W", image: nil, selectedImage: nil)
+        
+        let sViewController = SViewController()
+        let navi_2 = NavigationController(rootViewController: sViewController)
+        navi_2.tabBarItem = UITabBarItem(title: "S", image: nil, selectedImage: nil)
+        
+        let tabBarController = TabBarController()
+        tabBarController.viewControllers = [navi_0, navi_1, navi_2]
+        tabBarController.selectedIndex = 1
+        
+        self.window?.rootViewController = tabBarController
+        
+        self.window?.makeKeyAndVisible()
+        
 		return true
 	}
 

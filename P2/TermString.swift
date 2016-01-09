@@ -14,7 +14,7 @@ struct TermString {
     let string_same = "a，啊，阿。ai，爱，挨。ai，唉，矮。ao，熬，袄。ang，肮，盎。"
     let string_different = "a，ai，啊，唉。an，ang，俺，昂。an，ang，按，肮。"
     
-    func getBatch(type type: DuadType, amount: Int) -> [batch]? {
+    func getCollection(type type: DuadType, amount: Int) -> [Collection]? {
         
         switch type {
         case .Same:
@@ -23,17 +23,17 @@ struct TermString {
 
             let numbers = getRandomNumbers(amount, lessThan: groups.count)
             
-            var filtedGroups = [group]()
+            var filtedGroups = [Group]()
             for i in numbers {
                 filtedGroups.append(groups[i])
             }
             
-            var batches = [batch]()
+            var collections = [Collection]()
             for group in filtedGroups {
                 let batch = group.componentsSeparatedByString("，")
-                batches.append(batch)
+                collections.append(batch)
             }
-            return batches
+            return collections
             
         case .Different:
             return nil
