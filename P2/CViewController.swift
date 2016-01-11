@@ -12,27 +12,48 @@ class CViewController: UIViewController {
 
 	var labels = [UILabel]()
 	var dots = [UIView]()
+    var buttons = [UIButton]()
+    
+    let customView = CustomView()
 
-	override func preferredStatusBarStyle() -> UIStatusBarStyle {
-		return .LightContent
-	}
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
-		self.title = "Characters"
-
-
-
+		self.navigationItem.title = "Characters"
+        self.view.backgroundColor = UIColor.backgroundColor()
+        
 		let letters = ["迟", "吃", "chi", "刺", "痴", "ci", "chi"]
 		getLabels(letters)
 		getDots()
+        
+        let buttonSize = CGSize(width: view.frame.height * 0.2, height: view.frame.height * 0.2)
+        let titles = ["Same", "Different"]
+        
+        for i in 0..<2 {
+            let x = (self.view.frame.width / 4 - buttonSize.width / 2) + ((self.view.frame.width / 2) * CGFloat(i))
+            
+            let rect = CGRectMake(x, 200, buttonSize.width, buttonSize.height)
+            
+            let button = customView.mainScreenButton(titles[i], color: UIColor.redColor(), frame: rect)
+            buttons.append(button!)
+            view.addSubview(button!)
+        }
 
 
 	}
 
 	override func viewWillAppear(animated: Bool) {
 		super.viewWillAppear(animated)
+        
+        
+        for button in buttons {
+            button.hidden = false
+        }
+        
+        for i in 0..<buttons.count {
+            self.buttons[i].genAnimation(.Appear, delay: 0.1 * Double(i), distance: 30 + CGFloat(i) * 40.0)
+        }
 
 
 		UIView.animateWithDuration(1.0) { () -> Void in

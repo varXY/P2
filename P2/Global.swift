@@ -9,13 +9,21 @@
 import Foundation
 
 
-typealias group = String
-typealias batch = [String]
-typealias duad = [String]
+typealias Group = String
+typealias Collection = [String]
+typealias Batch = [String]
 
 enum DuadType {
     case Same
     case Different
+}
+
+enum AnimationType {
+    case Appear
+    case Disappear
+    case Touched
+    case IsRightAnswer
+    case Other
 }
 
 func delay(seconds seconds: Double, completion:()->()) {
