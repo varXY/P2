@@ -15,4 +15,24 @@ extension UIColor {
     class func backgroundColor() -> UIColor {
         return UIColor(red: 236/255, green: 235/255, blue: 243/255, alpha: 1.0)
     }
+
+	class func deepGreen() -> UIColor {
+		return UIColor(red: 0/255, green: 153/255, blue: 153/255, alpha: 1.0)
+	}
+
+	class func lightGreen() -> UIColor {
+		return UIColor(red: 0/255, green: 204/255, blue: 204/255, alpha: 1.0)
+	}
+
+	class func brightGreen() -> UIColor {
+		return UIColor(red: 30/255, green: 240/255, blue: 30/255, alpha: 1.0)
+	}
+
+	class func electricRed() -> UIColor {
+		return UIColor(red: 250/255, green: 30/255, blue: 30/255, alpha: 1.0)
+	}
+
+	class func lightElectricRed() -> UIColor {
+		return UIColor(red: 250/255, green: 30/255, blue: 30/255, alpha: 0.7)
+	}
 }

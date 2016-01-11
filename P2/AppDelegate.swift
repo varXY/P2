@@ -21,22 +21,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let cViewController = CViewController()
         let navi_0 = NavigationController(rootViewController: cViewController)
-        navi_0.tabBarItem = UITabBarItem(title: "C", image: nil, selectedImage: nil)
+//        navi_0.tabBarItem = UITabBarItem(title: "C", image: nil, selectedImage: nil)
+
         
-        
-        let wViewController = WViewController()
-        let navi_1 = NavigationController(rootViewController: wViewController)
-        navi_1.tabBarItem = UITabBarItem(title: "W", image: nil, selectedImage: nil)
-        
-        let sViewController = SViewController()
-        let navi_2 = NavigationController(rootViewController: sViewController)
-        navi_2.tabBarItem = UITabBarItem(title: "S", image: nil, selectedImage: nil)
-        
-        let tabBarController = TabBarController()
-        tabBarController.viewControllers = [navi_0, navi_1, navi_2]
-        tabBarController.selectedIndex = 1
-        
-        self.window?.rootViewController = tabBarController
+//        let wViewController = WViewController()
+//        let navi_1 = NavigationController(rootViewController: wViewController)
+//        navi_1.tabBarItem = UITabBarItem(title: "W", image: nil, selectedImage: nil)
+//        
+//        let sViewController = SViewController()
+//        let navi_2 = NavigationController(rootViewController: sViewController)
+//        navi_2.tabBarItem = UITabBarItem(title: "S", image: nil, selectedImage: nil)
+//        
+//        let tabBarController = TabBarController()
+//        tabBarController.viewControllers = [navi_0, navi_1, navi_2]
+//        tabBarController.selectedIndex = 1
+
+        self.window?.rootViewController = navi_0
         
         self.window?.makeKeyAndVisible()
         
