@@ -35,11 +35,29 @@ class SViewController: UIViewController {
             buttons.append(button!)
             view.addSubview(button!)
         }
+        
+        let string = NSMutableString(string: "拼音")
+        let range = string.rangeOfString("拼")
+        var cfrange = CFRangeMake(range.location, range.length)
+        CFStringTransform(string, &cfrange, kCFStringTransformMandarinLatin, false)
+        CFStringTransform(string, nil, kCFStringTransformStripDiacritics, false)
+        print(string)
+        
+        let arr = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+        let numbers = arr.sort { (_, _) -> Bool in
+            arc4random() < arc4random()
+        }
+        print(numbers)
+
+        let x = arc4random(Int)
+        print(x)
 	}
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
+        print(Int.random(10, upper: 100))
+
         let termString = TermString()
         let batches = termString.getCollection(type: .Same, amount: 2)
         print(batches)

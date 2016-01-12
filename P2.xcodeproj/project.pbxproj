@@ -22,6 +22,8 @@
 		C339C22F1C40B11C00947247 /* UIButton+genAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C339C22E1C40B11C00947247 /* UIButton+genAnimation.swift */; };
 		C339C2331C40B28B00947247 /* UIColor+CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C339C2321C40B28B00947247 /* UIColor+CustomColor.swift */; };
 		C341A7FF1C3E6008003049EE /* TermString.swift in Sources */ = {isa = PBXBuildFile; fileRef = C341A7FE1C3E6008003049EE /* TermString.swift */; };
+		C358D3BB1C44F3E000B2A69B /* Int+random.swift in Sources */ = {isa = PBXBuildFile; fileRef = C358D3BA1C44F3E000B2A69B /* Int+random.swift */; };
+		C358D3BD1C44F64600B2A69B /* NSArray+randomOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C358D3BC1C44F64600B2A69B /* NSArray+randomOrder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		C339C22E1C40B11C00947247 /* UIButton+genAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+genAnimation.swift"; sourceTree = "<group>"; };
 		C339C2321C40B28B00947247 /* UIColor+CustomColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+CustomColor.swift"; sourceTree = "<group>"; };
 		C341A7FE1C3E6008003049EE /* TermString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermString.swift; sourceTree = "<group>"; };
+		C358D3BA1C44F3E000B2A69B /* Int+random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+random.swift"; sourceTree = "<group>"; };
+		C358D3BC1C44F64600B2A69B /* NSArray+randomOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSArray+randomOrder.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,8 @@
 			children = (
 				C339C22E1C40B11C00947247 /* UIButton+genAnimation.swift */,
 				C339C2321C40B28B00947247 /* UIColor+CustomColor.swift */,
+				C358D3BA1C44F3E000B2A69B /* Int+random.swift */,
+				C358D3BC1C44F64600B2A69B /* NSArray+randomOrder.swift */,
 			);
 			name = extension;
 			sourceTree = "<group>";
@@ -188,6 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C358D3BB1C44F3E000B2A69B /* Int+random.swift in Sources */,
 				C341A7FF1C3E6008003049EE /* TermString.swift in Sources */,
 				C339C22F1C40B11C00947247 /* UIButton+genAnimation.swift in Sources */,
 				C339C2331C40B28B00947247 /* UIColor+CustomColor.swift in Sources */,
@@ -201,6 +208,7 @@
 				318607151C3BF05B00F8C781 /* WViewController.swift in Sources */,
 				C3238A331C3FB18200081E6E /* Global.swift in Sources */,
 				318607011C3BE94A00F8C781 /* AppDelegate.swift in Sources */,
+				C358D3BD1C44F64600B2A69B /* NSArray+randomOrder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
