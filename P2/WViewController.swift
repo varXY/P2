@@ -28,6 +28,10 @@ class WViewController: UIViewController {
 		getLabels(letters)
 		getDots()
         
+        let string: NSString = "重"
+        let arr = string.toPinyin()
+        print(arr)
+        
         let buttonSize = CGSize(width: view.frame.height * 0.2, height: view.frame.height * 0.2)
         let titles = ["Same", "Different"]
         

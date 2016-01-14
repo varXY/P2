@@ -22,6 +22,9 @@
 		C339C22F1C40B11C00947247 /* UIButton+genAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C339C22E1C40B11C00947247 /* UIButton+genAnimation.swift */; };
 		C339C2331C40B28B00947247 /* UIColor+CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C339C2321C40B28B00947247 /* UIColor+CustomColor.swift */; };
 		C341A7FF1C3E6008003049EE /* TermString.swift in Sources */ = {isa = PBXBuildFile; fileRef = C341A7FE1C3E6008003049EE /* TermString.swift */; };
+		C3E06A311C4647D200973461 /* hanzi2pinyin_v2.txt in Resources */ = {isa = PBXBuildFile; fileRef = C3E06A2B1C4647D200973461 /* hanzi2pinyin_v2.txt */; };
+		C3E06A321C4647D200973461 /* NSArray+PinYinSearcher.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E06A2D1C4647D200973461 /* NSArray+PinYinSearcher.m */; };
+		C3E06A331C4647D200973461 /* NSString+PinYinConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E06A2F1C4647D200973461 /* NSString+PinYinConverter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,13 @@
 		C339C22E1C40B11C00947247 /* UIButton+genAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+genAnimation.swift"; sourceTree = "<group>"; };
 		C339C2321C40B28B00947247 /* UIColor+CustomColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+CustomColor.swift"; sourceTree = "<group>"; };
 		C341A7FE1C3E6008003049EE /* TermString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermString.swift; sourceTree = "<group>"; };
+		C3E06A2B1C4647D200973461 /* hanzi2pinyin_v2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hanzi2pinyin_v2.txt; sourceTree = "<group>"; };
+		C3E06A2C1C4647D200973461 /* NSArray+PinYinSearcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+PinYinSearcher.h"; sourceTree = "<group>"; };
+		C3E06A2D1C4647D200973461 /* NSArray+PinYinSearcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+PinYinSearcher.m"; sourceTree = "<group>"; };
+		C3E06A2E1C4647D200973461 /* NSString+PinYinConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PinYinConverter.h"; sourceTree = "<group>"; };
+		C3E06A2F1C4647D200973461 /* NSString+PinYinConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PinYinConverter.m"; sourceTree = "<group>"; };
+		C3E06A301C4647D200973461 /* SWPinYinHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWPinYinHeader.h; sourceTree = "<group>"; };
+		C3E06A341C46493900973461 /* P2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "P2-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +91,12 @@
 				C341A7FD1C3E5FDE003049EE /* Data */,
 				C3238A321C3FB18200081E6E /* Global.swift */,
 				C339C22C1C40ADBC00947247 /* CustomView.swift */,
+				C3E06A2A1C4647D200973461 /* SWPinYinSearcher */,
 				C339C2341C40B91500947247 /* extension */,
 				318607071C3BE94A00F8C781 /* Assets.xcassets */,
 				318607091C3BE94A00F8C781 /* LaunchScreen.storyboard */,
 				3186070C1C3BE94A00F8C781 /* Info.plist */,
+				C3E06A341C46493900973461 /* P2-Bridging-Header.h */,
 			);
 			path = P2;
 			sourceTree = "<group>";
@@ -116,6 +128,19 @@
 				C3238A301C3FA75000081E6E /* PhraseString.swift */,
 			);
 			name = Data;
+			sourceTree = "<group>";
+		};
+		C3E06A2A1C4647D200973461 /* SWPinYinSearcher */ = {
+			isa = PBXGroup;
+			children = (
+				C3E06A2B1C4647D200973461 /* hanzi2pinyin_v2.txt */,
+				C3E06A2C1C4647D200973461 /* NSArray+PinYinSearcher.h */,
+				C3E06A2D1C4647D200973461 /* NSArray+PinYinSearcher.m */,
+				C3E06A2E1C4647D200973461 /* NSString+PinYinConverter.h */,
+				C3E06A2F1C4647D200973461 /* NSString+PinYinConverter.m */,
+				C3E06A301C4647D200973461 /* SWPinYinHeader.h */,
+			);
+			path = SWPinYinSearcher;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +203,7 @@
 			files = (
 				3186070B1C3BE94A00F8C781 /* LaunchScreen.storyboard in Resources */,
 				318607081C3BE94A00F8C781 /* Assets.xcassets in Resources */,
+				C3E06A311C4647D200973461 /* hanzi2pinyin_v2.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,7 +217,9 @@
 				C341A7FF1C3E6008003049EE /* TermString.swift in Sources */,
 				C339C22F1C40B11C00947247 /* UIButton+genAnimation.swift in Sources */,
 				C339C2331C40B28B00947247 /* UIColor+CustomColor.swift in Sources */,
+				C3E06A331C4647D200973461 /* NSString+PinYinConverter.m in Sources */,
 				318607191C3BF1E000F8C781 /* NavigationController.swift in Sources */,
+				C3E06A321C4647D200973461 /* NSArray+PinYinSearcher.m in Sources */,
 				318607131C3BEB4D00F8C781 /* TabBarController.swift in Sources */,
 				318607171C3BF09800F8C781 /* SViewController.swift in Sources */,
 				C3238A2F1C3FA68A00081E6E /* CharacterString.swift in Sources */,
@@ -305,8 +333,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = P2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = myname.com.P2;
+				PRODUCT_BUNDLE_IDENTIFIER = myname.com.P2.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/bobo/Desktop/P2/P2/P2-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -316,8 +345,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = P2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = myname.com.P2;
+				PRODUCT_BUNDLE_IDENTIFIER = myname.com.P2.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/bobo/Desktop/P2/P2/P2-Bridging-Header.h";
 			};
 			name = Release;
 		};

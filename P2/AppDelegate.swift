@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         self.window!.backgroundColor = UIColor.whiteColor()
         
-        let cViewController = CViewController()
+        let cViewController = WViewController()
         let navi_0 = NavigationController(rootViewController: cViewController)
 //        navi_0.tabBarItem = UITabBarItem(title: "C", image: nil, selectedImage: nil)
 
