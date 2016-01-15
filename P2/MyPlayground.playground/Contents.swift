@@ -3,10 +3,8 @@
 import UIKit
 
 
-var str = "Hello, playground"
-let string = str as NSString
+let resourceName = NSBundle.mainBundle().pathForResource("词语", ofType: "txt")
 
-let label = UILabel(frame: CGRectMake(0, 0, 100, 50))
-label.backgroundColor = UIColor.backgroundColor()
-label.text = "hello"
+var dictionaryText = NSString()
+try! dictionaryText = NSString(contentsOfFile: resourceName!, encoding: NSUTF8StringEncoding)
 

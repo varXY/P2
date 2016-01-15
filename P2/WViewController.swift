@@ -44,6 +44,13 @@ class WViewController: UIViewController {
         let arr_3 = String_arr.searchPinYinWithKeyPath(nil, searchString: "de")
         print(arr_3)
         
+        let resourceName = NSBundle.mainBundle().pathForResource("词语", ofType: "txt")
+        var dictionaryText = NSString()
+//        var encoding = NSUTF8StringEncoding
+//        let dic = NSString(contentsOfFile: resourceName!, usedEncoding: &encoding)
+//        print(dic)
+        try! dictionaryText = NSString(contentsOfFile: resourceName!, encoding: NSUnicodeStringEncoding)
+        print(dictionaryText)
         
         let buttonSize = CGSize(width: view.frame.height * 0.2, height: view.frame.height * 0.2)
         let titles = ["Same", "Different"]

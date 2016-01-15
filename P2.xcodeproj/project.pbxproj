@@ -24,6 +24,7 @@
 		C33E4C0C1C488008008C5873 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33E4C0A1C488008008C5873 /* ViewController.swift */; };
 		C33E4C0D1C488008008C5873 /* ActivityViewCustomActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33E4C0B1C488008008C5873 /* ActivityViewCustomActivity.swift */; };
 		C341A7FF1C3E6008003049EE /* TermString.swift in Sources */ = {isa = PBXBuildFile; fileRef = C341A7FE1C3E6008003049EE /* TermString.swift */; };
+		C3E0157D1C48E8AA00DCDAFA /* 词语.txt in Resources */ = {isa = PBXBuildFile; fileRef = C3E0157C1C48E8AA00DCDAFA /* 词语.txt */; };
 		C3E06A311C4647D200973461 /* hanzi2pinyin_v2.txt in Resources */ = {isa = PBXBuildFile; fileRef = C3E06A2B1C4647D200973461 /* hanzi2pinyin_v2.txt */; };
 		C3E06A321C4647D200973461 /* NSArray+PinYinSearcher.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E06A2D1C4647D200973461 /* NSArray+PinYinSearcher.m */; };
 		C3E06A331C4647D200973461 /* NSString+PinYinConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E06A2F1C4647D200973461 /* NSString+PinYinConverter.m */; };
@@ -50,6 +51,7 @@
 		C33E4C0B1C488008008C5873 /* ActivityViewCustomActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewCustomActivity.swift; sourceTree = "<group>"; };
 		C341A7FE1C3E6008003049EE /* TermString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermString.swift; sourceTree = "<group>"; };
 		C384D77C1C47982000A4FB30 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		C3E0157C1C48E8AA00DCDAFA /* 词语.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "词语.txt"; sourceTree = "<group>"; };
 		C3E06A2B1C4647D200973461 /* hanzi2pinyin_v2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hanzi2pinyin_v2.txt; sourceTree = "<group>"; };
 		C3E06A2C1C4647D200973461 /* NSArray+PinYinSearcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+PinYinSearcher.h"; sourceTree = "<group>"; };
 		C3E06A2D1C4647D200973461 /* NSArray+PinYinSearcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+PinYinSearcher.m"; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				C3238A2E1C3FA68A00081E6E /* CharacterString.swift */,
 				C341A7FE1C3E6008003049EE /* TermString.swift */,
 				C3238A301C3FA75000081E6E /* PhraseString.swift */,
+				C3E0157C1C48E8AA00DCDAFA /* 词语.txt */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3E0157D1C48E8AA00DCDAFA /* 词语.txt in Resources */,
 				3186070B1C3BE94A00F8C781 /* LaunchScreen.storyboard in Resources */,
 				318607081C3BE94A00F8C781 /* Assets.xcassets in Resources */,
 				C3E06A311C4647D200973461 /* hanzi2pinyin_v2.txt in Resources */,
