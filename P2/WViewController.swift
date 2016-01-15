@@ -29,8 +29,21 @@ class WViewController: UIViewController {
 		getDots()
         
         let string: NSString = "重"
-        let arr = string.toPinyin()
+        let arr = string.toPinyinArray()
         print(arr)
+        
+        let string_1: NSString = "什么"
+        let arr_1 = string_1.toPinyinArrayWithSeparator(" ")
+        print(arr_1)
+        
+        let string_2: NSString = "重阳"
+        let arr_2 = string_2.toPinyinArrayWithSeparator(" ")
+        print(arr_2)
+        
+        let String_arr = ["睡觉", "觉得"] as NSArray
+        let arr_3 = String_arr.searchPinYinWithKeyPath(nil, searchString: "de")
+        print(arr_3)
+        
         
         let buttonSize = CGSize(width: view.frame.height * 0.2, height: view.frame.height * 0.2)
         let titles = ["Same", "Different"]

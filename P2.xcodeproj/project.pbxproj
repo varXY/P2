@@ -21,6 +21,8 @@
 		C339C22D1C40ADBC00947247 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C339C22C1C40ADBC00947247 /* CustomView.swift */; };
 		C339C22F1C40B11C00947247 /* UIButton+genAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C339C22E1C40B11C00947247 /* UIButton+genAnimation.swift */; };
 		C339C2331C40B28B00947247 /* UIColor+CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C339C2321C40B28B00947247 /* UIColor+CustomColor.swift */; };
+		C33E4C0C1C488008008C5873 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33E4C0A1C488008008C5873 /* ViewController.swift */; };
+		C33E4C0D1C488008008C5873 /* ActivityViewCustomActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33E4C0B1C488008008C5873 /* ActivityViewCustomActivity.swift */; };
 		C341A7FF1C3E6008003049EE /* TermString.swift in Sources */ = {isa = PBXBuildFile; fileRef = C341A7FE1C3E6008003049EE /* TermString.swift */; };
 		C3E06A311C4647D200973461 /* hanzi2pinyin_v2.txt in Resources */ = {isa = PBXBuildFile; fileRef = C3E06A2B1C4647D200973461 /* hanzi2pinyin_v2.txt */; };
 		C3E06A321C4647D200973461 /* NSArray+PinYinSearcher.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E06A2D1C4647D200973461 /* NSArray+PinYinSearcher.m */; };
@@ -44,7 +46,10 @@
 		C339C22C1C40ADBC00947247 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		C339C22E1C40B11C00947247 /* UIButton+genAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+genAnimation.swift"; sourceTree = "<group>"; };
 		C339C2321C40B28B00947247 /* UIColor+CustomColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+CustomColor.swift"; sourceTree = "<group>"; };
+		C33E4C0A1C488008008C5873 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C33E4C0B1C488008008C5873 /* ActivityViewCustomActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewCustomActivity.swift; sourceTree = "<group>"; };
 		C341A7FE1C3E6008003049EE /* TermString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermString.swift; sourceTree = "<group>"; };
+		C384D77C1C47982000A4FB30 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		C3E06A2B1C4647D200973461 /* hanzi2pinyin_v2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hanzi2pinyin_v2.txt; sourceTree = "<group>"; };
 		C3E06A2C1C4647D200973461 /* NSArray+PinYinSearcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+PinYinSearcher.h"; sourceTree = "<group>"; };
 		C3E06A2D1C4647D200973461 /* NSArray+PinYinSearcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+PinYinSearcher.m"; sourceTree = "<group>"; };
@@ -92,6 +97,7 @@
 				C3238A321C3FB18200081E6E /* Global.swift */,
 				C339C22C1C40ADBC00947247 /* CustomView.swift */,
 				C3E06A2A1C4647D200973461 /* SWPinYinSearcher */,
+				C33E4C091C487FF2008C5873 /* Share */,
 				C339C2341C40B91500947247 /* extension */,
 				318607071C3BE94A00F8C781 /* Assets.xcassets */,
 				318607091C3BE94A00F8C781 /* LaunchScreen.storyboard */,
@@ -116,8 +122,18 @@
 				318607021C3BE94A00F8C781 /* CViewController.swift */,
 				318607141C3BF05B00F8C781 /* WViewController.swift */,
 				318607161C3BF09800F8C781 /* SViewController.swift */,
+				C384D77C1C47982000A4FB30 /* MyPlayground.playground */,
 			);
 			name = ViewController;
+			sourceTree = "<group>";
+		};
+		C33E4C091C487FF2008C5873 /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				C33E4C0A1C488008008C5873 /* ViewController.swift */,
+				C33E4C0B1C488008008C5873 /* ActivityViewCustomActivity.swift */,
+			);
+			name = Share;
 			sourceTree = "<group>";
 		};
 		C341A7FD1C3E5FDE003049EE /* Data */ = {
@@ -227,7 +243,9 @@
 				C339C22D1C40ADBC00947247 /* CustomView.swift in Sources */,
 				C3238A311C3FA75000081E6E /* PhraseString.swift in Sources */,
 				318607151C3BF05B00F8C781 /* WViewController.swift in Sources */,
+				C33E4C0D1C488008008C5873 /* ActivityViewCustomActivity.swift in Sources */,
 				C3238A331C3FB18200081E6E /* Global.swift in Sources */,
+				C33E4C0C1C488008008C5873 /* ViewController.swift in Sources */,
 				318607011C3BE94A00F8C781 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,7 +353,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = myname.com.P2.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/bobo/Desktop/P2/P2/P2-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PRODUCT_NAME)/P2-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -347,7 +365,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = myname.com.P2.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/bobo/Desktop/P2/P2/P2-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PRODUCT_NAME)/P2-Bridging-Header.h";
 			};
 			name = Release;
 		};
