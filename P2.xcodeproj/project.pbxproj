@@ -15,9 +15,18 @@
 		318607151C3BF05B00F8C781 /* WViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318607141C3BF05B00F8C781 /* WViewController.swift */; };
 		318607171C3BF09800F8C781 /* SViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318607161C3BF09800F8C781 /* SViewController.swift */; };
 		318607191C3BF1E000F8C781 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318607181C3BF1E000F8C781 /* NavigationController.swift */; };
+		C317748D1C4F7905006F885C /* Array+removeAtIndexes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C317748C1C4F7905006F885C /* Array+removeAtIndexes.swift */; };
+		C317748F1C4F7E02006F885C /* Term.swift in Sources */ = {isa = PBXBuildFile; fileRef = C317748E1C4F7E02006F885C /* Term.swift */; };
 		C3238A2F1C3FA68A00081E6E /* CharacterString.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3238A2E1C3FA68A00081E6E /* CharacterString.swift */; };
 		C3238A311C3FA75000081E6E /* PhraseString.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3238A301C3FA75000081E6E /* PhraseString.swift */; };
 		C3238A331C3FB18200081E6E /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3238A321C3FB18200081E6E /* Global.swift */; };
+		C334DA951C4CD86300A230FC /* UIImage+ColorImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C334DA941C4CD86300A230FC /* UIImage+ColorImage.swift */; };
+		C334DA971C4CDAF400A230FC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C334DA961C4CDAF400A230FC /* CoreGraphics.framework */; };
+		C334DA991C4CDB0C00A230FC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C334DA981C4CDB0C00A230FC /* QuartzCore.framework */; };
+		C334DA9B1C4CDB1600A230FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C334DA9A1C4CDB1600A230FC /* Foundation.framework */; };
+		C334DA9D1C4CDB1D00A230FC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C334DA9C1C4CDB1D00A230FC /* UIKit.framework */; };
+		C334DAA31C4CDB4100A230FC /* UIBezierPath+ZEPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = C334DAA01C4CDB4100A230FC /* UIBezierPath+ZEPolygon.m */; };
+		C334DAA41C4CDB4100A230FC /* UIImage+PolygonMasking.m in Sources */ = {isa = PBXBuildFile; fileRef = C334DAA21C4CDB4100A230FC /* UIImage+PolygonMasking.m */; };
 		C339C22D1C40ADBC00947247 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C339C22C1C40ADBC00947247 /* CustomView.swift */; };
 		C339C22F1C40B11C00947247 /* UIButton+genAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C339C22E1C40B11C00947247 /* UIButton+genAnimation.swift */; };
 		C339C2331C40B28B00947247 /* UIColor+CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C339C2321C40B28B00947247 /* UIColor+CustomColor.swift */; };
@@ -41,9 +50,20 @@
 		318607141C3BF05B00F8C781 /* WViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WViewController.swift; sourceTree = "<group>"; };
 		318607161C3BF09800F8C781 /* SViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SViewController.swift; sourceTree = "<group>"; };
 		318607181C3BF1E000F8C781 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		C317748C1C4F7905006F885C /* Array+removeAtIndexes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+removeAtIndexes.swift"; sourceTree = "<group>"; };
+		C317748E1C4F7E02006F885C /* Term.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Term.swift; sourceTree = "<group>"; };
 		C3238A2E1C3FA68A00081E6E /* CharacterString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = CharacterString.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C3238A301C3FA75000081E6E /* PhraseString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhraseString.swift; sourceTree = "<group>"; };
 		C3238A321C3FB18200081E6E /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		C334DA941C4CD86300A230FC /* UIImage+ColorImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+ColorImage.swift"; sourceTree = "<group>"; };
+		C334DA961C4CDAF400A230FC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C334DA981C4CDB0C00A230FC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C334DA9A1C4CDB1600A230FC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C334DA9C1C4CDB1D00A230FC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C334DA9F1C4CDB4100A230FC /* UIBezierPath+ZEPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+ZEPolygon.h"; sourceTree = "<group>"; };
+		C334DAA01C4CDB4100A230FC /* UIBezierPath+ZEPolygon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+ZEPolygon.m"; sourceTree = "<group>"; };
+		C334DAA11C4CDB4100A230FC /* UIImage+PolygonMasking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+PolygonMasking.h"; sourceTree = "<group>"; };
+		C334DAA21C4CDB4100A230FC /* UIImage+PolygonMasking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PolygonMasking.m"; sourceTree = "<group>"; };
 		C339C22C1C40ADBC00947247 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		C339C22E1C40B11C00947247 /* UIButton+genAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+genAnimation.swift"; sourceTree = "<group>"; };
 		C339C2321C40B28B00947247 /* UIColor+CustomColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+CustomColor.swift"; sourceTree = "<group>"; };
@@ -66,6 +86,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C334DA9D1C4CDB1D00A230FC /* UIKit.framework in Frameworks */,
+				C334DA9B1C4CDB1600A230FC /* Foundation.framework in Frameworks */,
+				C334DA991C4CDB0C00A230FC /* QuartzCore.framework in Frameworks */,
+				C334DA971C4CDAF400A230FC /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +99,10 @@
 		318606F41C3BE94A00F8C781 = {
 			isa = PBXGroup;
 			children = (
+				C334DA9C1C4CDB1D00A230FC /* UIKit.framework */,
+				C334DA9A1C4CDB1600A230FC /* Foundation.framework */,
+				C334DA981C4CDB0C00A230FC /* QuartzCore.framework */,
+				C334DA961C4CDAF400A230FC /* CoreGraphics.framework */,
 				318606FF1C3BE94A00F8C781 /* P2 */,
 				318606FE1C3BE94A00F8C781 /* Products */,
 			);
@@ -98,6 +126,7 @@
 				C341A7FD1C3E5FDE003049EE /* Data */,
 				C3238A321C3FB18200081E6E /* Global.swift */,
 				C339C22C1C40ADBC00947247 /* CustomView.swift */,
+				C334DA9E1C4CDB2500A230FC /* Polygon */,
 				C3E06A2A1C4647D200973461 /* SWPinYinSearcher */,
 				C33E4C091C487FF2008C5873 /* Share */,
 				C339C2341C40B91500947247 /* extension */,
@@ -109,10 +138,24 @@
 			path = P2;
 			sourceTree = "<group>";
 		};
+		C334DA9E1C4CDB2500A230FC /* Polygon */ = {
+			isa = PBXGroup;
+			children = (
+				C334DA9F1C4CDB4100A230FC /* UIBezierPath+ZEPolygon.h */,
+				C334DAA01C4CDB4100A230FC /* UIBezierPath+ZEPolygon.m */,
+				C334DAA11C4CDB4100A230FC /* UIImage+PolygonMasking.h */,
+				C334DAA21C4CDB4100A230FC /* UIImage+PolygonMasking.m */,
+			);
+			name = Polygon;
+			path = SWPinYinSearcher;
+			sourceTree = "<group>";
+		};
 		C339C2341C40B91500947247 /* extension */ = {
 			isa = PBXGroup;
 			children = (
+				C317748C1C4F7905006F885C /* Array+removeAtIndexes.swift */,
 				C339C22E1C40B11C00947247 /* UIButton+genAnimation.swift */,
+				C334DA941C4CD86300A230FC /* UIImage+ColorImage.swift */,
 				C339C2321C40B28B00947247 /* UIColor+CustomColor.swift */,
 			);
 			name = extension;
@@ -145,6 +188,7 @@
 				C341A7FE1C3E6008003049EE /* TermString.swift */,
 				C3238A301C3FA75000081E6E /* PhraseString.swift */,
 				C3E0157C1C48E8AA00DCDAFA /* 词语.txt */,
+				C317748E1C4F7E02006F885C /* Term.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -234,18 +278,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C334DAA31C4CDB4100A230FC /* UIBezierPath+ZEPolygon.m in Sources */,
 				C341A7FF1C3E6008003049EE /* TermString.swift in Sources */,
 				C339C22F1C40B11C00947247 /* UIButton+genAnimation.swift in Sources */,
 				C339C2331C40B28B00947247 /* UIColor+CustomColor.swift in Sources */,
 				C3E06A331C4647D200973461 /* NSString+PinYinConverter.m in Sources */,
+				C317748F1C4F7E02006F885C /* Term.swift in Sources */,
 				318607191C3BF1E000F8C781 /* NavigationController.swift in Sources */,
 				C3E06A321C4647D200973461 /* NSArray+PinYinSearcher.m in Sources */,
 				318607131C3BEB4D00F8C781 /* TabBarController.swift in Sources */,
 				318607171C3BF09800F8C781 /* SViewController.swift in Sources */,
 				C3238A2F1C3FA68A00081E6E /* CharacterString.swift in Sources */,
+				C334DA951C4CD86300A230FC /* UIImage+ColorImage.swift in Sources */,
 				318607031C3BE94A00F8C781 /* CViewController.swift in Sources */,
 				C339C22D1C40ADBC00947247 /* CustomView.swift in Sources */,
+				C334DAA41C4CDB4100A230FC /* UIImage+PolygonMasking.m in Sources */,
 				C3238A311C3FA75000081E6E /* PhraseString.swift in Sources */,
+				C317748D1C4F7905006F885C /* Array+removeAtIndexes.swift in Sources */,
 				318607151C3BF05B00F8C781 /* WViewController.swift in Sources */,
 				C33E4C0D1C488008008C5873 /* ActivityViewCustomActivity.swift in Sources */,
 				C3238A331C3FB18200081E6E /* Global.swift in Sources */,

@@ -10,5 +10,8 @@
 #define P2_Bridging_Header_h
 
 #import "SWPinYinHeader.h"
+#import "UIImage+PolygonMasking.h"
+#import "UIBezierPath+ZEPolygon.h"
+#import <QuartzCore/QuartzCore.h>
 
 #endif /* P2_Bridging_Header_h */
