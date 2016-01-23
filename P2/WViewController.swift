@@ -17,13 +17,16 @@ class WViewController: UIViewController {
     
     let customView = CustomView()
     var term: Term?
+    var allTerms = [[String]]()
+    
+    var startTime = NSTimeInterval()
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
 		self.navigationItem.title = "Words"
         self.view.backgroundColor = UIColor.backgroundColor()
-        self.term = Term()
+//        self.term = Term()
 //        let string: NSString = "重"
 //        let arr = string.toPinyinArray()
 //        print(arr)
@@ -41,14 +44,81 @@ class WViewController: UIViewController {
 //        print(arr_3)
         
         
+//        let txtToPlist = TxtToPlist()
+//        txtToPlist.saveRecords()
         
+        
+        let queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
+        dispatch_async(queue) {
+            self.allTerms = self.getTerms()
+            dispatch_async(dispatch_get_main_queue()) {
+                self.view.backgroundColor = UIColor.purpleColor()
+                self.printThing()
+            }
+        }
+        
+        
+//        let currentTime = NSDate.timeIntervalSinceReferenceDate()
+//        var elapsedTime: NSTimeInterval = currentTime - startTime
+//        
+//        let minutes = UInt32(elapsedTime / 60.0)
+//        
+//        elapsedTime -= (NSTimeInterval(minutes) * 60)
+//        
+//        //calculate the seconds in elapsed time.
+//        
+//        let seconds = UInt8(elapsedTime)
+//        
+//        elapsedTime -= NSTimeInterval(seconds)
+//        
+//        //find out the fraction of milliseconds to be displayed.
+//        
+//        let fraction = UInt8(elapsedTime * 100)
+//        
+//        //add the leading zero for minutes, seconds and millseconds and store them as string constants
+//        
+//        let strMinutes = String(format: "%02d", minutes)
+//        let strSeconds = String(format: "%02d", seconds)
+//        let strFraction = String(format: "%02d", fraction)
+//        
+//        //concatenate minuets, seconds and milliseconds as assign it to the UILabel
+//        
+//        print("\(strMinutes):\(strSeconds):\(strFraction)")
         
         
 	}
+    
+    func printThing() {
+        let numbers = getRandomNumbers(100, lessThan: 5000)
+        for number in numbers {
+            print(allTerms[number])
+        }
+    }
+    
+    func getTerms() -> [[String]] {
+        var terms = [[String]]()
+        let path = NSBundle.mainBundle().pathForResource("terms", ofType: "plist")
+        
+        if NSFileManager.defaultManager().fileExistsAtPath(path!) {
+            
+            if let data = NSData(contentsOfFile: path!) {
+                let unarchiver = NSKeyedUnarchiver(forReadingWithData: data)
+                terms = unarchiver.decodeObjectForKey("terms") as! [[String]]
+                unarchiver.finishDecoding()
+            }
+            
+        }
+        
+        return terms
+        
+    }
 
 	override func viewWillAppear(animated: Bool) {
 		super.viewWillAppear(animated)
         
+        
+        
+
 //        let indexes = getRandomNumbers(10, lessThan: 5000)
 //        for index in indexes {
 //            print(index)
